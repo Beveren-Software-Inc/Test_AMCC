@@ -1,9 +1,9 @@
 [project]
-name = "klik_pos"
+name = "amcc_app"
 authors = [
     { name = "Beveren Sooftware Inc", email = "info@beverensoftware.com"}
 ]
-description = "KLiK PoS: A Modern Point of Sale for your Business"
+description = "AMCC"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
