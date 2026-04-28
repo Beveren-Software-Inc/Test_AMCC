@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-10-16 13:40:58.987978",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "amended_from",
+  "ref",
+  "requester",
+  "issue_date",
+  "column_break_7122w",
+  "type",
+  "mr_ref",
+  "expiry_date",
+  "section_break_nccxu",
+  "base_line_spend",
+  "saving",
+  "column_break_ncjrh",
+  "cost_impact",
+  "ik_ook",
+  "exemption_summary_details_section",
+  "exemption_summary",
+  "section_break_ybnyv",
+  "explanation"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "EF-.YY.-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Exemption Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "label": "Ref"
+  },
+  {
+   "fieldname": "requester",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requester",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "column_break_7122w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nEmployee Request\nVendor Based\nTime Period\nProduct Based\nService Based",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mr_ref",
+   "fieldtype": "Data",
+   "label": "MR Ref"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "section_break_nccxu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "base_line_spend",
+   "fieldtype": "Currency",
+   "label": "Base Line Spend"
+  },
+  {
+   "fieldname": "saving",
+   "fieldtype": "Currency",
+   "label": "Saving"
+  },
+  {
+   "fieldname": "column_break_ncjrh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_impact",
+   "fieldtype": "Select",
+   "label": "Cost Impact",
+   "options": "\nPositive\nNegative\nNo Impact\nNot Applicable"
+  },
+  {
+   "fieldname": "ik_ook",
+   "fieldtype": "Select",
+   "label": "IK/OOK",
+   "options": "\nIK\nOOK"
+  },
+  {
+   "fieldname": "exemption_summary_details_section",
+   "fieldtype": "Section Break",
+   "label": "Exemption Summary Details"
+  },
+  {
+   "fieldname": "exemption_summary",
+   "fieldtype": "Text Editor",
+   "label": "Exemption Summary"
+  },
+  {
+   "fieldname": "explanation",
+   "fieldtype": "Text Editor",
+   "label": "Explanation"
+  },
+  {
+   "fieldname": "section_break_ybnyv",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-17 14:36:54.636360",
+ "modified_by": "Administrator",
+ "module": "AMCC App",
+ "name": "Exemption Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

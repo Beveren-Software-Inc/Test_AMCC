@@ -1,0 +1,33 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-05-30 09:57:00.621576",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2024-05-30 09:57:00.621576",
+ "modified_by": "Administrator",
+ "module": "AMCC App",
+ "name": "Approval Date Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select \r\n    jc.name as \"PO:Link/Purchase Order:170\",\r\n    jc.transaction_date as \"PO Creation Date:Date/date:100\",\r\n    jc.owner as \"Created By:Data/Created By:235\",\r\n    jc.po_manager_name as \"Direct Manager name:Data/Direct Manager name:185\",\r\n    jc.pom_date as \"Direct Manager approval date:Date/Direct Manager approval date:120\",\r\n    jc.fc_name as \"FC name:Data/FC name:130\",\r\n    jc.fcm_date as \"FC approval date:Date/FC approval date:120\",\r\n    DATEDIFF(jc.fcm_date,jc.pom_date) as \"Approval Days:int/Approval Days:100\",\r\n    jc.gm_approver_name as \"GM name:Data/GM name:130\",\r\n    jc.gmm_date as \"GM approval date:Date/GM approval date:120\"\r\nfrom\r\n(select jc.name,jc.transaction_date,jc.owner,jc.po_manager_name,jc.pom_date,jc.fc_name,jc.fcm_date,jc.gm_approver_name,jc.gmm_date\r\nfrom `tabPurchase Order` jc where jc.status != \"Cancelled\" and jc.`transaction_date` BETWEEN %(from_date)s AND %(to_date)s) jc",
+ "ref_doctype": "Purchase Order",
+ "report_name": "Approval Date Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase User"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include amcc_app *.css
+recursive-include amcc_app *.csv
+recursive-include amcc_app *.html
+recursive-include amcc_app *.ico
+recursive-include amcc_app *.js
+recursive-include amcc_app *.json
+recursive-include amcc_app *.md
+recursive-include amcc_app *.png
+recursive-include amcc_app *.py
+recursive-include amcc_app *.svg
+recursive-include amcc_app *.txt
+recursive-exclude amcc_app *.pyc

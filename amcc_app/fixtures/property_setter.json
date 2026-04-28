@@ -1,0 +1,19 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Purchase Order",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "items",
+  "modified": "2024-10-16 11:43:43.564179",
+  "name": "Purchase Order-items-permlevel",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "permlevel",
+  "property_type": "Int",
+  "row_name": null,
+  "value": "2"
+ }
+]
